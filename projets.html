@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">MARTIN </a>
+      <nav class="navbar">
+        <a href="index.html">Accueil</a>
+        <a href="projets.html" class="active">Projets</a>
+        <a href="apropos.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="btn-contact">Contact</a>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="page-header">
+        <h1>Mes Réalisations</h1>
+        <p>Découvrez les projets web que j'ai conçus et développés de A à Z.</p>
+      </section>
+
+      <section class="projects-list">
+        <article class="projects-detail">
+          <div class="projects-image">
+            <img
+              src="image/calculatrice.png"
+              alt="image de la calculatrice"
+              class="projects-img"
+            />
+          </div>
+
+          <div class="projects-info">
+            <span class="projects-category">Projet Personnel</span>
+            <h2>Calculatrice Web Interactive</h2>
+
+            <p>
+              Une application de calculatrice fluide conçue pour exécuter des
+              opérations mathématiques en temps réel sans rechargement de page.
+            </p>
+
+            <div class="projects-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+            </div>
+
+            <ul class="projects-features">
+              <li>Manupilation dynamique du DOM en JS</li>
+              <li>Support des saisies au clavier et clics de souris</li>
+              <li>Gestion des exceptions (ex: division par zéro)</li>
+            </ul>
+
+            <div class="projects-links">
+              <a
+                href="calculatrice/index.html"
+                class="btn btn-primary"
+                target="_blank"
+                >Voir la démo</a
+              >
+              <a
+                href="https://github.com/Enrique-Martin07/calculatrice.js"
+                class="btn btn-secondary"
+                target="_blank"
+                >Code GitHub</a
+              >
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

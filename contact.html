@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">MARTIN </a>
+      <nav class="navbar">
+        <a href="index.html">Accueil</a>
+        <a href="projets.html">Projets</a>
+        <a href="apropos.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="btn-contact">Contact</a>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="contact-hero">
+        <h1>Me <span class="highlight">Contacter</span></h1>
+        <p class="subtitle">
+          Une question, une proposition d'alternance ou un projets web ?
+          N'hésite pas à me laisser un message !
+        </p>
+      </section>
+
+      <hr class="separator" />
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Mes Coordonnées</h2>
+          <p>
+            Tu peux me rejoindre directement via ces canaux ou utiliser le
+            formulaire ci-contre.
+          </p>
+
+          <div class="info-item">
+            <strong>Email :</strong>
+            <a href="mailto:martin.webdev070@gmail.com"
+              >martin.webdev070@gmail.com</a
+            >
+          </div>
+
+          <div class="info-item">
+            <strong>Localisation :</strong>
+            <span>Saint-Georges 97313, GF</span>
+          </div>
+
+          <div class="info-item">
+            <strong>Réseaux</strong>
+            <div class="social-links">
+              <a href="https://github.com/Enrique-Martin07" target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xkjwddor"
+          method="POST"
+        >
+          <h2>Envoyer un message</h2>
+
+          <div class="form-group">
+            <label for="name">Nom / Entreprise</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Ex: Jean Dupont"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Adresse Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Ex: jean.dupont@gmail.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Sujet</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              required
+              placeholder="Ex: Opportunité d'alternance / Projet web"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              placeholder="Ton message ici..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            Envoyer le message
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
